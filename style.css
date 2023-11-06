@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: "Monrope", sans-serif;
+    overflow-x: hidden;
+}
+/* Header */
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background-color: #24053e;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: scale(4);
+    z-index: -1;
+}
+
+.container {
+    padding: 0 7.5rem;
+    width: 100%;
+    max-width: 144rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shape-1 {
+    position: absolute;
+    top: 20%;
+    left: -6%;
+}
+
+.shape-2 {
+    position: absolute;
+    top: 45%;
+    right: -2%;
+}
+
+.navbar {
+    display: flex;
+    padding: 3rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .btn-inline {
+    display: inline-block;
+    color: #fff;
+    border-bottom: 2px solid #44ffa1;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    transition: all 250ms ease-in-out;
+    padding-bottom: 5px;
+    font-size: 19px;
+}
+
+.navbar .btn-inline:hover {
+    color: #44ffa1;
+}
+
+.header-content {
+
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 740px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: .9rem;
+    font-family: "Fraunces", serif;
+}
+
+.header-content .heading-large {
+    line-height: 1;
+    color: #fff;
+}
+
+.header-content .heading-large span {
+    position: relative;
+}
+
+.header-content .heading-large span::after {
+    content: '';
+    position: absolute;
+    background-color: #44ffa1;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    bottom: 5px;
+}
+
+.btn {
+    color: #24053e;
+    display: inline-block;
+    background-color: #44ffa1;
+    font-size: 18px;
+    padding: 16px 30px;
+    border: 1px solid #44ffa1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 250ms ease-in-out;
+    margin-bottom: 2.5rem;
+}
+
+.btn:hover {
+    background-color: #24053e;
+    color: #44ffa1;
+    border: 1px solid #44ffa1;
+}
+
+.header-img {
+    /* max-height: 40rem;
+    max-width: 77rem; */
+    margin: 0 auto;
+    width: 700px;
+}
+
+.header-img img {
+    width: 100%;
+}
+/* End Header */
+/* Details */
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #24053e;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+section {
+    position: relative;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 130%;
+    width: 100%;
+    background-color: #f8fdf3;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: scale(4);
+    z-index: -2;
+}
+
+.details .mg {
+    margin: 0 80px;
+}
+
+
+.details .card .number p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Fraunces", serif;
+    border: 1px solid #24053e;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    padding-top: 9px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.details .card .head {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: "Fraunces", serif;
+    margin-bottom: 30px;
+}
+
+.details .card .content {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    font-family: "Manrope", sans-serif;
+}
+/* End Details */
+/* About */
+.about-container {
+    padding: 220px 70px 100px 70px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.founder {
+    width: 400px;
+    margin-top: -115px;
+
+}
+
+.founder img {
+    width: 100%;
+}
+
+.about-text {
+    color: #fff;
+    background-color: #24053e;
+    width: 650px;
+    height: 100%;
+    padding: 60px 50px 20px 50px;
+    margin-left: -48px;
+    position: relative;
+}
+
+.about-text h2 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "Fraunces", serif;
+    margin-bottom: 45px;
+}
+
+.about-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    font-family: "Manrope", sans-serif;
+    margin-bottom: 25px;
+}
+
+.shape-3 {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+}
+
+.shape-3 img {
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 70px;
+}
+/* End About */
+/* Copy Right */
+.copy-container {
+    text-align: center;
+
+}
+
+.copy-right p {
+    font-size: 18px;
+    margin: 90px 0 30px 0;
+}
+
+.copy-right p a {
+    text-decoration: none;
+    color: #24053e;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* End Copy Right */
+
+/* Amination With Javascript */
+
+.reveal {
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.reveal.active {
+
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.aboutAmin {
+    position: relative;
+    transform: translateX(500px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.aboutAmin.active {
+
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* XXXXX End Amination With Javascript XXXXX */
+
+
+
+
+/* اعدادات التوافق مع كل الجهزه (Disktop, Tablet, Phone) */
+
+@media (max-width: 990px) and (min-width: 768px) {
+
+    /* قواعد التصميم للأجهزة اللوحية */
+    .header .container .heading-large {
+        font-size: 4.5rem;
+        width: 690px;
+        margin: 0 auto;
+
+    }
+
+    .header::after {
+        height: 110%;
+    }
+
+    .header-img {
+        width: 550px;
+    }
+
+    .shape-1 {
+        transform: scale(0.7);
+        left: -20%;
+    }
+
+    .shape-2 {
+        transform: scale(0.7);
+        right: -10%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .details.container {
+        padding: 0 60px;
+    }
+
+    .details {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .details .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 55px;
+
+    }
+
+    .details .mg {
+        margin: 0 0 50px 0;
+    }
+
+    .details .card h3 {
+        font-size: 27px;
+        margin-bottom: 20px;
+        font-family: "Fraunces", serif;
+        color: #24053e;
+    }
+
+    .details .card .number {
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    .details .card .number p {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+        border: #24053e 1px solid;
+        border-radius: 50%;
+        padding: 11px;
+    }
+
+    .details .card .content p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.8;
+        font-family: "Manrope", sans-serif;
+        color: #24053e;
+    }
+
+
+
+    .about-text {
+        width: 550px;
+        padding: 30px 30px;
+        position: relative;
+        margin-left: -70px;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+    }
+
+    .about-text .about-par {
+        font-size: 14px;
+    }
+
+    .about-text .btn {
+        font-size: 14px;
+        padding: 15px 20px;
+        margin-bottom: 0;
+    }
+
+    .about-text .shape-3 {
+        top: 66%;
+    }
+
+    .founder {
+        width: 250px;
+        margin-top: -105px;
+
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    /* قواعد التصميم لأجهزة الجوال */
+
+    .header::after {
+        height: 100%;
+    }
+
+    .shape-1,
+    .shape-2 {
+        display: none;
+    }
+
+    .header .container {
+        padding: 0 20px;
+    }
+
+    .header .container .navbar {
+        padding: 30px 0px;
+    }
+
+    .header .container .navbar a {
+        font-size: 15px;
+    }
+
+    .header .container .heading-large {
+        font-size: 3rem;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .header-img {
+        width: 450px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 12px 26px;
+        font-size: 14px;
+    }
+
+    .details.container {
+        padding: 0 40px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .details .mg {
+        margin: 0 0 50px 0;
+    }
+
+
+    .card {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .card .number p {
+        font-size: 10px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .head h3 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+
+
+    .about-text {
+        text-align: center;
+        padding: 25px 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about-container {
+        padding: 190px 0 70px 0;
+        width: 85%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .about-text .about-head {
+        font-size: 35px;
+        margin-bottom: 32px;
+    }
+
+    .about-text .about-par {
+        font-size: 14px;
+    }
+
+    .about-text .btn {
+        margin-bottom: 0;
+    }
+
+    .founder {
+        width: 190px;
+        margin-top: 0;
+        margin: 0 auto;
+        margin-bottom: -56px;
+
+    }
+
+    .copy-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .copy-right p {
+        font-size: 14px;
+        margin: 40px;
+
+    }
+
+    .copy-right p a {
+        text-decoration: none;
+        color: #24053e;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+}
+
+/*  XXXXX نهايه اعدادات التوافق مع كل الجهزه (Disktop, Tablet, Phone) XXXXX */
